@@ -568,6 +568,10 @@ type Configuration struct {
 	SyslogHost string `json:"syslog-host"`
 	// SyslogPort port
 	SyslogPort int `json:"syslog-port"`
+	// SyslogAccessLogOptions options like tag=nginx,severity=info
+	SyslogAccessLogOptions string `json:"syslog-access-log-options"`
+	// SyslogErrorLogOptions options like tag=nginx-error,severity=warning
+	SyslogErrorLogOptions string `json:"syslog-error-log-options"`
 
 	// NoTLSRedirectLocations is a comma-separated list of locations
 	// that should not get redirected to TLS
